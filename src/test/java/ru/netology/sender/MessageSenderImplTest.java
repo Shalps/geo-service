@@ -25,7 +25,7 @@ void setUp() {
 
 }
     @Test
-    void CheckingTextByIP_Test() {
+    void checkingTextByIP_Test() {
          LocalizationService localizationService = Mockito.mock(LocalizationService.class);
          Mockito.when(localizationService.locale(Country.RUSSIA)).thenReturn( "Добро пожаловать");
 
@@ -41,7 +41,7 @@ void setUp() {
 
     }
     @Test
-   void CheckingTextForAmericanIP_Test(){
+   void checkingTextForAmericanIP_Test(){
         LocalizationService localizationService = Mockito.mock(LocalizationService.class);
         Mockito.when(localizationService.locale(Country.USA)).thenReturn( "Welcome");
 

@@ -15,7 +15,7 @@ GeoService geoService;
     }
 
     @Test
-    void CheckingTheLocationByIP_Test() {
+    void checkingTheLocationByIP_Test() {
 
         Assertions.assertEquals(new Location("Moscow", Country.RUSSIA, "Lenina", 15).getCountry(),geoService.byIp("172.0.32.11").getCountry());
         Assertions.assertEquals(new Location("New York", Country.USA, " 10th Avenue", 32).getCity(),geoService.byIp("96.44.183.149").getCity());

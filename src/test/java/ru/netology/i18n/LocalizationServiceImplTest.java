@@ -8,7 +8,7 @@ class LocalizationServiceImplTest {
 
 
     @Test
-    void CheckingTheReturnedText_Test() {
+    void checkingTheReturnedText_Test() {
         LocalizationService localizationService = new LocalizationServiceImpl();
         String locale = localizationService.locale(Country.RUSSIA);
         Assertions.assertEquals("Добро пожаловать",locale);
